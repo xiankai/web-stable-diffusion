@@ -26,4 +26,4 @@ rm -rf dist/tokenizers-wasm
 cp -r ${TOKENZIER_WASM_HOME}/pkg dist/tokenizers-wasm
 
 echo "Exporting tvmjs runtime dist files"
-python -c "from tvm.contrib import tvmjs; tvmjs.export_runtime(\"dist\")"
+python3 -c "from tvm.contrib import tvmjs; tvmjs.export_runtime(\"dist\")"
